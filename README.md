@@ -5,6 +5,8 @@
 An interpreter language for fivem server modding/mod installing, the aim is to be able to have mods with drag/drop capabillities.
 Hopefully this creates a bright future for developers and server owners.
 
+Im building a community and suppot on discord: [https://discord.gg/v83pBUH9mE](https://discord.gg/v83pBUH9mE)
+
 ## Documentation
 
 The processor will set the working directory to the directory the script is in, if it cannot find a server.cfg in the current directory it will search 
