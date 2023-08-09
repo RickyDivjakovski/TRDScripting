@@ -20,10 +20,10 @@ Place a .tscr file in your project folder, you can run a command prompt and exec
 Examples of working/not working.
 Imagine this is the path of your server.cfg  -  C:\users\projects\testProject\server.cfg
 
-C:\users\projects\testProject1\script1.tscr -------------------| This will work - working directory will be set to C:\users\projects\testProject
-C:\users\projects\testProject1\folder1\script2.tscr ----------| This will work - working directory will be set to C:\users\projects\testProject
+C:\users\projects\testProject1\script1.tscr --------------------| This will work - working directory will be set to C:\users\projects\testProject
+C:\users\projects\testProject1\folder1\script2.tscr -----------| This will work - working directory will be set to C:\users\projects\testProject
 C:\users\projects\testProject1\folder1\folder2\script3.tscr --| This will NOT work  
-C:\users\projects\script4.tscr ---------------------------------| This will work, but will search - C:\users\projects for a server.cfg and set the working directory to the first
+C:\users\projects\script4.tscr ----------------------------------| This will work, but will search - C:\users\projects for a server.cfg and set the working directory to the first
 
 The script file extension must be a .tscr
 Lines beginning with # are ignored
