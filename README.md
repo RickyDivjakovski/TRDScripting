@@ -32,8 +32,8 @@ To escape a character use ^ before it, you will only need to escape commas(,), o
 
 A sample script file can be downloaded from [here](https://github.com/RickyDivjakovski/TRDScripting/blob/main/TRDScriptSample.txt)
 
-```csharp
-Scripting: 	
+Scripting: 
+```csharp	
 		ModifyFile expects 5 args
 		ModifyFile(File, [ReplaceLine, ReplaceText, ConvertEOL], [LineStart, LineEnd, Containing], StringToFind, StringToReplaceWith)
 
