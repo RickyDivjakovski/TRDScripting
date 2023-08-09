@@ -11,6 +11,8 @@ The processor will set the working directory to the directory the script is in, 
 the root directory of the directory the script is in and set the working directory to it, if no config found it will recursively search the script directory 
 for a server.cfg, if found the working directory will be set to that. if not found, the script will not run.
 
+Downloads - 
+
 Place a .tscr file in your project folder, you can run a command prompt and execute "TRDScriptProcessor.exe MyTscriptFile.tscr" to run it
 
 Examples of working/not working.
@@ -25,6 +27,8 @@ The script file extension must be a .tscr
 Lines beginning with # are ignored
 To escape a character use ^ before it, you will only need to escape commas(,), open brackets(() and closed brackets())
 ## Usage/Examples
+
+A sample script file can be downloaded from [here](https://github.com/RickyDivjakovski/TRDScripting/blob/main/TRDScriptSample.txt)
 
 ```csharp
 Scripting: 	
