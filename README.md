@@ -34,26 +34,26 @@ A sample script file can be downloaded from [here](https://github.com/RickyDivja
 
 Scripting: 
 ```csharp	
-		ModifyFile expects 5 args
-		ModifyFile(File, [ReplaceLine, ReplaceText, ConvertEOL], [LineStart, LineEnd, Containing], StringToFind, StringToReplaceWith)
+// ModifyFile expects 5 args
+ModifyFile(File, [ReplaceLine, ReplaceText, ConvertEOL], [LineStart, LineEnd, Containing], StringToFind, StringToReplaceWith)
 
-		ImportSql expects 1 arg
-		ImportSql(SqlFile)
+// ImportSql expects 1 arg
+ImportSql(SqlFile)
 		
-		MoveFile expects 2 args
-		MoveFile(InputFile, OutputFile)
+// MoveFile expects 2 args
+MoveFile(InputFile, OutputFile)
 		
-		MoveFoler expects 2 args
-		MoveFolder(InputDirectory, OutputDirectory)
+// MoveFoler expects 2 args
+MoveFolder(InputDirectory, OutputDirectory)
 		
-		CreateFile expects 1 arg
-		CreateFile(FileToCreate)
+// CreateFile expects 1 arg
+CreateFile(FileToCreate)
 		
-		CreateFolder expects 1 arg
-		CreateFolder(FolderToCreate)
+// CreateFolder expects 1 arg
+CreateFolder(FolderToCreate)
 		
-		ExtractZip expects 2 args
-		ExtractZip(FileToExtract, OutputFolder)
+// ExtractZip expects 2 args
+ExtractZip(FileToExtract, OutputFolder)
 ```
 
 This may not seem like much, but its a start for automated modification of fivem servers.
