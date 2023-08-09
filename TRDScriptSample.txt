@@ -1,0 +1,34 @@
+################## TRD SCRIPTING LANGUAGE
+
+# Modify server.cfg, replace lines that start with "sets sv_projectName" with "sv_projectName my project"
+ModifyFile(server.cfg, ReplaceLine, LineStarts, sets sv_projectName, sv_projectName my project)
+
+# Modify server.cfg, replace lines that end with "google.com" with "my new link is www.stackoverflow.com"
+ModifyFile(server.cfg, ReplaceLine, LineEnds, google.com, my new link is www.stackoverflow.com)
+
+# Modify server.cfg, replace lines that contain "dont edit this" with "oops i edited it"
+ModifyFile(server.cfg, ReplaceLine, Contains, dont edit this, oops i edited it)
+
+# Modify server.cfg, all text containing "myLogo.png" with "logo.png" (Warning, you must only use Containing as the 3rd arg)
+ModifyFile(server.cfg, ReplaceText, Contains, myLogo.png, logo.png)
+
+# Modify server, converting all EOL chars the file contains from Windows to Unix
+ModifyFile(server.cfg, ConvertEOL, Contains, Windows, Unix)
+
+# Import sql code from resources\test_sql\test.sql
+ImportSql(resources\test_sql\test.sql)
+
+# Moves a file called fxmanifest.lua from the resources\tmp folder to the resources\my_mod folder
+MoveFile(resources\tmp\fxmanifest.lua, resources\my_mod\fxmanifest.lua)
+
+# Moves a folder called qb-phone from the resources folder to the resources\[qb] folder
+MoveFolder(resources\qb-phone, resources\[qb]\qb-phone)
+
+# Creates a blank file called myTestMod.cfg in the resources folder
+CreateFile(resources\myTestMod.cfg)
+
+# Creates an empty folder called MyMod in the resources folder
+CreateFolder(resources\MyMod)
+
+# Extracts a file called MyMod.zip  inside the MyStuff folder into resources\MyModFiles folder
+ExtractZip(MyStuff\MyMod.zip, resources\MyModFiles)
